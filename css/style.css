@@ -417,9 +417,8 @@ list-style: none;
     }
 }
 @media(max-width: 480px){
-	.home-image img{
-		max-width: 300px;
-		transition: .3s;
+	.home {
+		display: flex;
 	}
 
 	form { display: flex;
