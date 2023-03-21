@@ -422,7 +422,8 @@ list-style: none;
 	}
 
 	form { display: flex;
-		  flex-wrap: wrap;
+		flex-wrap: wrap;
+		align-items: center;
 		 }
 	.form input[type="email"],  input[type="text"] {
 		width: 300px;
