@@ -15,7 +15,7 @@ header{
     top: 0;
     right: 0;
     z-index: 10;
-    background: yellow;
+    background: var(--bg-color);
 }
 section{
     max-width: 1110px;
@@ -299,7 +299,7 @@ list-style: none;
     opacity: 1;
 }
 .contact{
-    background: linear-gradient(360deg, #8B008B, #BA55D3);
+    background: linear-gradient(360deg, #f39e77, #f5723f);
     margin-top: 150px;
     padding: 50px 120px;
     display: flex;
@@ -336,3 +336,84 @@ list-style: none;
     margin: 0 10px;
     border-radius: 10px;
 }
+@media(max-width: 1200px){
+    section{
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: .3s;
+    }
+    .home-image img{
+        max-width: 450px;
+        transition: .3s;
+    }
+    :root{
+        --big-font:4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .3s;
+    }
+}
+@media(max-width: 860){
+    .home{
+        grid-template-columns: 1fr;
+        min-height: 11vh;
+        grid-gap: 1rem;
+    }
+    .home-image{
+        text-align: center;
+    }
+}
+@media (max-width: 768){
+    #navbar-icon{
+        display: block;
+    }
+    :root{
+        --big-font--: 3rem;
+        --h2-font--:0.8rem;
+        transition: .3s;
+    }
+    .home{
+        min-height: 80%;
+    }
+    .navbar-header{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        flex-direction:column;
+        background: #ccc;
+        opacity: 0.8;
+        text-align: center;
+        transition: all .50s;
+    }
+    .navbar-header a{
+        display: block;
+        padding: 0.8rem;
+    }
+    .navbar-hearder a:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+    }
+    .navbar-header a::after{
+        display: none;
+    }
+    .navbar-header.active{
+        top: 100%
+    }
+    .services-itens{
+        grid-template-columns: 1fr;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-image{
+        text-align: center;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .portfolio-content{
+        grid-template-columns: 2fr;
+    }
+}
+
